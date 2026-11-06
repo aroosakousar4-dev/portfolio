@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="logo">Aroosa Kousar</div>
+    
+    <nav id="nav-menu" class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-controls">
+      <!-- Dark/Light Mode Toggle Button -->
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-toggle" class="hamburger" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero / Home Section -->
+  <section id="home" class="scroll-animate">
+    <h1>Hi, I'm Aroosa Kousar</h1>
+    <p>Welcome to my personal portfolio</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="scroll-animate">
+    <h2>About Me</h2>
+    <p>I am a Computer Systems Engineering student passionate about web development.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="scroll-animate">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Python & Linux</li>
+      <li>Web Development</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="scroll-animate">
+    <h2>Contact</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <small class="error-msg" id="name-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <small class="error-msg" id="email-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <small class="error-msg" id="message-error"></small>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <p id="form-success" class="success-msg"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+            </html>
+            
