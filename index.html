@@ -53,12 +53,16 @@
   <!-- Contact Section -->
   <section id="contact" class="scroll-animate">
     <h2>Contact</h2>
-    
-    <p>Email: <a href="mailto:aroosakousar4@gmail.com">your.email@example.com</a></p>
+        <p>Email: <a href="mailto:aroosakousar4@gmail.com">aroosakousar4@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/aroosakousar4-dev" target="_blank">github.com/aroosakousar4-dev</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/amina-kousar target="_blank">linkedin.com/in/yourprofile</a></p>
-    
+    <p>LinkedIn: <a href="https://linkedin.com/in/amina-kousar" target="_blank">linkedin.com/in/amina-kousar</a></p>
+    <form id="contact-form" novalidate>
       <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <small class="error-msg" id="name-error"></small>
+      </div>
+     <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
         <small class="error-msg" id="email-error"></small>
